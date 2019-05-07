@@ -10,9 +10,9 @@ class NewPortal extends React.Component {
   }
 
   render() {
-    const { children, visible } = this.props;
+    const { children } = this.props;
     // 直接通过显隐表示
-    return visible && ReactDOM.createPortal(
+    return ReactDOM.createPortal(
       children,
       this.node,
     );

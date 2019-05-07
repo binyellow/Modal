@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './modal';
 
-import './App.css';
+import './App.css'
 class App extends Component {
   constructor(props) {
     super(props)
@@ -23,9 +23,9 @@ class App extends Component {
   render() {
     const { visible } = this.state
     return <div className="app">
-      <button onClick={this.showModal}>click here</button>
+      <button onClick={this.showModal} className="btn">click here</button>
       <Modal
-        maskClosable
+        // maskClosable
         visible={visible}
         title="这是自定义title"
         onCancel={this.hideModal}
